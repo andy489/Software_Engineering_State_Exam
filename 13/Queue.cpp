@@ -119,7 +119,7 @@ int main() {
 
     Queue<int> *Q_copy1 = new Queue<int>(*Q);	// copy constructor
     Queue<int> *Q_copy2 = new Queue<int>();
-    *Q_copy2 = *Q_copy1;			            // assignment operator
+    *Q_copy2 = *Q_copy1;			// assignment operator
 
     for (int i = size; i >= 1; --i) {
         assert(Q->front() == size - i + 1);
