@@ -19,7 +19,7 @@ struct Node {
 template<typename T>
 class Queue {
     Node<T> *head, *tail;
-    int size;
+    int size{};
 
     void clear() {
         while (!is_empty()) {
@@ -40,7 +40,6 @@ public:
     Queue() : head(nullptr), tail(nullptr), size(0) {}
 
     Queue(const Queue &o) {
-        clear();
         copy(o);
     }
 
@@ -117,9 +116,9 @@ int main() {
         Q->enqueue(e);
     }
 
-    Queue<int> *Q_copy1 = new Queue<int>(*Q);	// copy constructor
+    Queue<int> *Q_copy1 = new Queue<int>(*Q);    // copy constructor
     Queue<int> *Q_copy2 = new Queue<int>();
-    *Q_copy2 = *Q_copy1;			// assignment operator
+    *Q_copy2 = *Q_copy1;                        // assignment operator
 
     for (int i = size; i >= 1; --i) {
         assert(Q->front() == size - i + 1);

@@ -19,7 +19,7 @@ struct Node {
 template<typename T>
 class Stack {
     Node<T> *head;
-    int size;
+    int size{};
 
     void clear() {
         while (!is_empty()) {
@@ -42,13 +42,14 @@ class Stack {
             this->push(aux->top());
             aux->pop();
         }
+
+        delete aux;
     }
 
 public:
     Stack() : head(nullptr), size(0) {}
 
     Stack(const Stack &o) {
-        clear();
         copy(o);
     }
 
