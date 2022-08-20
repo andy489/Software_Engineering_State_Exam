@@ -7,7 +7,7 @@ struct Node {
     T data;
     Node *left, *right;
 
-    Node(T data, Node *l = nullptr, Node *r = nullptr) : data(data), left(l), right(r) {};
+    explicit Node(T data, Node *l = nullptr, Node *r = nullptr) : data(data), left(l), right(r) {};
 };
 
 template<typename T>
@@ -84,7 +84,7 @@ class BST {
         return n->data < key ? find_util(n->right, key) : find_util(n->left, key);
     }
 
-    static void inorder(Node<T> *n, std::ostream &os) {
+    static void inorder(Node<T> *n, ostream &os) {
         if (!n) {
             return;
         }
@@ -97,9 +97,7 @@ class BST {
 public:
     BST() : r(nullptr) {}
 
-    BST(const BST &o) : r(copy(o.r)) {
-        size = o.size;
-    }
+    BST(const BST &o) : r(copy(o.r)), size(o.size){}
 
     BST &operator=(const BST &o) {
         clear(r);
@@ -138,9 +136,9 @@ public:
         return find_util(r, key);
     }
 
-    friend std::ostream &operator<<(std::ostream &os, const BST &t) {
+    friend ostream &operator<<(ostream &os, const BST &t) {
         inorder(t.r, os);
-        os << "\b\b" << std::endl;
+        os << "\b\b" << endl;
         return os;
     }
 };
@@ -195,4 +193,3 @@ int main() {
 
     return 0;
 }
-
