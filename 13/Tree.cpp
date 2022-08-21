@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
+#include <queue>
 
 using namespace std;
 
@@ -41,6 +42,33 @@ class Tree {
         }
     }
 
+    static ostream &bfs(Node<T> *n, ostream &os) {
+        queue<Node<T> *> Q;
+        Q.push(n);
+
+        int lvl = 0;
+        while (!Q.empty()) {
+            int curr_size = Q.size();
+            if (lvl != 0) {
+                os << endl;
+            }
+            os << "lvl-" << lvl << ": ";
+            while (curr_size--) {
+                Node<T> *curr_n = Q.front();
+                Q.pop();
+
+                os << curr_n->data << ", ";
+
+                for (int i = 0; i < curr_n->children.size(); ++i) {
+                    Q.push(curr_n->children[i]);
+                }
+            }
+            lvl++;
+        }
+        os << "\b\b" << endl;
+        return os;
+    }
+
 public:
 
     Tree() : root(nullptr) {}
@@ -76,9 +104,9 @@ public:
     }
 
     friend ostream &operator<<(ostream &os, const Tree &t) {
-        dfs(t.root, os);
-        os << "\b\b" << endl;
-        return os;
+        //dfs(t.root, os);
+        // os << "\b\b" << endl;
+        return bfs(t.root, os);
     }
 };
 
@@ -106,7 +134,7 @@ int main() {
      *            /  |  \
      *           2   4   10
      *          / \    / | \ \
-     *         8   7  6  0  5 9
+     *         7   8  0  5  6 9
      *                 / | \
      *                1 11 12
      */
@@ -127,8 +155,8 @@ int main() {
 
     Tree<int> tree;
     tree.buildTree(childParentMap);
+
     cout << tree;
 
     return 0;
 }
-
