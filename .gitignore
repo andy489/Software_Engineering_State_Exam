@@ -53,6 +53,7 @@ buildNumber.properties
 .classpath
 
 # Intellij
+out/
 .idea/
 *.iml
 *.iws
