@@ -16,5 +16,10 @@ public class Main {
         l1.setIsConnected(false);
 
         System.out.println(Laptop.getAllConnected());
+
+        l2 = null;
+        Laptop.decrementAllConnected();
+
+        System.out.println(Laptop.getAllConnected());
     }
 }

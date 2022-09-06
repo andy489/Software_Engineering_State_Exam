@@ -90,3 +90,7 @@ out/
 *.exe
 *.out
 *.app
+
+# CPP
+cmake-build-debug/
+CMakeLists.txt

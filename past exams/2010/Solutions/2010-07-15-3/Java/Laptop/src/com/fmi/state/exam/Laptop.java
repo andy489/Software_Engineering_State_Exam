@@ -37,8 +37,12 @@ public class Laptop {
         gigaHertz = other.gigaHertz;
     }
 
-    public static Integer getAllConnected(){
+    public static Integer getAllConnected() {
         return connectedCount;
+    }
+
+    public static void decrementAllConnected() {
+        connectedCount--;
     }
 
     public Boolean getConnected() {
