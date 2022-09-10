@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com book.xsd">
+
+    <title isbn="0836217462">
+        Being a Dog Is a Full-Time Job
+    </title>
+    <author> Charles M. Schulz</author>
+    <character>
+        <name>Snoopy</name>
+        <friend-of>Pepperming Patty</friend-of>
+        <since>1950-10-04</since>
+        <qualification>extroverted beagle</qualification>
+    </character>
+    <character>
+        <name>Pepperming Patty</name>
+        <since>1966-08-22</since>
+        <qualification>bold, brash and tomboyish</qualification>
+    </character>
+</book>

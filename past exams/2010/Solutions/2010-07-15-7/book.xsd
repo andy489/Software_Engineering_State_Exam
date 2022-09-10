@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:attribute name="isbn">
+    <xs:simpleType>
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([0-9]-)+"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:attribute>
+
+<xs:complexType name="title_type">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="isbn" type="xs:string"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:element name="book">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="title" type="title_type"/>
+      <xs:element name="author"></xs:element>
+      <xs:element name="character" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="friend-of" type="xs:string" minOccurs="0"/>
+            <xs:element name="since" type="xs:date"/>
+            <xs:element name="qualification" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+</xs:schema>
