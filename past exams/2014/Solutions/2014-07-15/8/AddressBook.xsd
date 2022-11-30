@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="names">
+        <xs:sequence>
+            <xs:element name="First" type="xs:string" />
+            <xs:element name="Middle" type="xs:string" />
+            <xs:element name="Last" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="address">
+        <xs:sequence>
+            <xs:element name="City" type="xs:string" />
+            <xs:element name="Street">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="number" use="required" />
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Postal-Code" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="telephone-numbers">
+        <xs:sequence>
+            <xs:element name="Mobile" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="Home" type="xs:string" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Contact">
+        <xs:sequence>
+            <xs:element name="Names" type="names" />
+            <xs:element name="Address" type="address" />
+            <xs:element name="Date-of-Birth" type="xs:string" />
+            <xs:element name="Telephone-Numbers" type="telephone-numbers" />
+        </xs:sequence>
+        <xs:attribute name="type" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="relative" />
+                    <xs:enumeration value="colleague" />
+                    <xs:enumeration value="acquaintance" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="Addressbook">
+        <xs:sequence>
+            <xs:element name="Contact" type="Contact" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="Addressbook" type="Addressbook" />
+</xs:schema>

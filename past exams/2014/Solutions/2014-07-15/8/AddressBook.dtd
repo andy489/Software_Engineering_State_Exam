@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT Addressbook (Contact*)>
+<!ELEMENT Contact (Names, Address, Date-of-Birth, Telephone-Numbers)>
+<!ATTLIST Contact type (relative|colleague|acquaintance) #REQUIRED>
+
+<!ELEMENT Names (First, Middle, Last)>
+<!ELEMENT First (#PCDATA)>
+<!ELEMENT Middle (#PCDATA)>
+<!ELEMENT Last (#PCDATA)>
+
+<!ELEMENT Address (City, Street, Postal-Code)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT Street (#PCDATA)>
+<!ATTLIST Street number CDATA #REQUIRED>
+<!ELEMENT Postal-Code (#PCDATA)>
+
+<!ELEMENT Date-of-Birth (#PCDATA)>
+
+<!ELEMENT Telephone-Numbers (Mobile*, Home?)>
+<!ELEMENT Mobile (#PCDATA)>
+<!ELEMENT Home (#PCDATA)>

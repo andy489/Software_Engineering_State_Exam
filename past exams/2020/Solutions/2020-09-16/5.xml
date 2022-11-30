@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HotelCatalog [
+<!ELEMENT HotelCatalog (HotelChain*, Hotel+, Service*)>
+<!ATTLIST HotelCatalog Version ID #REQUIRED>
+
+<!ELEMENT HotelChain (ChainName, ChainOwner?)>
+<!ELEMENT ChainName (#PCDATA)>
+<!ELEMENT ChainOwner (#PCDATA)>
+<!ATTLIST HotelChain id ID #REQUIRED>
+
+<!ELEMENT Hotel (HotelNamee, HotelAddress, HotelImg)>
+<!ELEMENT HotelName (#PCDATA)>
+<!ELEMENT HotelAddress (#PCDATA)>
+<!ELEMENT HotelImg EMPTY>
+<!NOTATION JPG SYSTEM "image/jpg">
+<!ENTITY dune-img SYSTEM "gallery/dune.jpg" NDATA JPG>
+<!ENTITY sense-img SYSTEM "gallery/sense.jpg" NDATA JPG>
+<!ATTLIST Hotel hotelChainRef IDREF #IMPLIED>
+<!ATTLIST Hotel serviceRefs IDREFS #IMPLIED>
+
+<!ELEMENT Service (ServiceName, ServiceDescr?)>
+<!ELEMENT ServiceName (#PCDATA)>
+<!ELEMENT ServiceDescr (#PCDATA)>
+<!ATTLIST Service Included (YES|NO) #IMPLIED>
+<!ATTLIST Service service-id ID #REQUIRED>
+]>
+<HotelCatalog Version="HotelCatalog-1">
+    <HotelChain id="hotel-chain-1">
+        <ChainName>Victoria</ChainName>
+        <ChainOwner>Boyan Bonchev</ChainOwner>
+    </HotelChain>
+    <HotelChain id="hotel-chain-2">
+        <ChainName>Princess</ChainName>
+    </HotelChain>
+
+    <Hotel hotelChainRef="hotel-chain-1" serviceRefs="2 3">
+        <HotelName>Dune</HotelName>
+        <HotelAddress>Sunny Beach, 8240</HotelAddress>
+        <HotelImg link="dune-img"/>
+    </Hotel>
+    <Hotel serviceRefs="1 2">
+        <HotelName>Sense</HotelName>
+        <HotelAddress>Sofia, Tsar Osvoboditel 16</HotelAddress>
+        <HotelImg link="sense-img"/>
+    </Hotel>
+
+    <Service service-id="1" Included="YES">
+        <ServiceName>View</ServiceName>
+        <ServiceDescr>Great view including Alexander Nevsky Cathedral</ServiceDescr>
+    </Service>
+    <Service service-id="2" Included="YES">
+        <ServiceName>Beach</ServiceName>
+        <ServiceDescr>Private beach area</ServiceDescr>
+    </Service>
+    <Service service-id="3">
+        <ServiceName>Room Service</ServiceName>
+    </Service>
+</HotelCatalog>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE People-Database SYSTEM "Bio.dtd">-->
+<People-Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+                 xsi:noNamespaceSchemaLocation="Bio.xsd">
+    <Person>
+        <Names>
+            <First>Petar</First>
+            <Middle>Petrov</Middle>
+            <Last>Petrov</Last>
+        </Names>
+        <Date-of-Birth>24.05.1986</Date-of-Birth>
+        <Birthplace>Smolian</Birthplace>
+        <Citizenship>Bulgarian</Citizenship>
+        <Addresses>
+            <Address current="No">
+                <Country>Bulgaria</Country>
+                <City>Sofia</City>
+                <Street number="6">Goliam Bratan</Street>
+            </Address>
+            <Address current="Yes">
+                <Country>Bulgaria</Country>
+                <City>Sofia</City>
+                <Street number="10">Malak Bratan</Street>
+            </Address>
+        </Addresses>
+        <Contacts>
+            <Telephone>088888888</Telephone>
+            <Telephone>033333333</Telephone>
+            <Email>test-petar@gmail.com</Email>
+            <Email>test-petar2@gmail.com</Email>
+        </Contacts>
+        <Education>
+            <Institution>
+                <Institution-Name>Highschool 52</Institution-Name>
+                <Degree>Sredno obrazovanie</Degree>
+            </Institution>
+            <Institution>
+                <Institution-Name>FMI</Institution-Name>
+                <Specialty ongoing="No">
+                    <Specialty-Name>Software Engineering</Specialty-Name>
+                    <Graduation-Date>15.07.2010</Graduation-Date>
+                </Specialty>
+                <Specialty ongoing="Yes">
+                    <Specialty-Name>Machine Learning</Specialty-Name>
+                </Specialty>
+                <Degree>Bachelor's Degree</Degree>
+            </Institution>
+        </Education>
+    </Person>
+
+    <Person>
+        <Names>
+            <First>Tosho</First>
+            <Middle>Toshev</Middle>
+            <Last>Toshev</Last>
+        </Names>
+        <Date-of-Birth>10.04.2007</Date-of-Birth>
+        <Birthplace>Sofia</Birthplace>
+        <Citizenship>Bulgarian</Citizenship>
+        <Addresses>
+            <Address current="Yes">
+                <Country>Bulgaria</Country>
+                <City>Sofia</City>
+                <Street number="32">Sreden Bratan</Street>
+            </Address>
+        </Addresses>
+        <Contacts>
+            <Telephone>066666666</Telephone>
+            <Email>test-tosho@gmail.com</Email>
+        </Contacts>
+        <Education>
+            <Institution>
+                <Institution-Name>Highschool 3</Institution-Name>
+            </Institution>
+        </Education>
+    </Person>
+</People-Database>

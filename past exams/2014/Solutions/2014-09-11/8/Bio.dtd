@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT People-Database (Person*)>
+
+<!ELEMENT Person (Names, Date-of-Birth, Birthplace, Citizenship, Addresses, Contacts, Education)>
+
+<!ELEMENT Names (First, Middle, Last)>
+<!ELEMENT First (#PCDATA)>
+<!ELEMENT Middle (#PCDATA)>
+<!ELEMENT Last (#PCDATA)>
+
+<!ELEMENT Date-of-Birth (#PCDATA)>
+<!ELEMENT Birthplace (#PCDATA)>
+<!ELEMENT Citizenship (#PCDATA)>
+
+<!ELEMENT Addresses (Address+)>
+<!ELEMENT Address (Country, City, Street)>
+<!ATTLIST Address current (Yes|No) #REQUIRED> <!-- Is this address the current he lives on? -->
+<!ELEMENT Country (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT Street (#PCDATA)>
+<!ATTLIST Street number CDATA #REQUIRED>
+
+<!ELEMENT Contacts (Telephone+, Email+)>
+<!ELEMENT Telephone (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+
+<!ELEMENT Education (Institution*)>
+<!ELEMENT Institution (Institution-Name, Specialty*, Degree?)>
+<!ELEMENT Institution-Name (#PCDATA)>
+<!ELEMENT Specialty (Specialty-Name, Graduation-Date?)>
+<!ATTLIST Specialty ongoing (Yes|No) #REQUIRED>
+<!ELEMENT Degree (#PCDATA)>
+<!ELEMENT Specialty-Name (#PCDATA)>
+<!ELEMENT Graduation-Date (#PCDATA)>

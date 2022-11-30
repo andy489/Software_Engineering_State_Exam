@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--<!DOCTYPE Phonebook SYSTEM "AddressBook.xml">-->
+<Addressbook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="AddressBook.xsd">
+    <Contact type="relative">
+        <Names>
+            <First>Pesho</First>
+            <Middle>Goshov</Middle>
+            <Last>Goshov</Last>
+        </Names>
+        <Address>
+            <City>Sofia</City>
+            <Street number="8">Random street</Street>
+            <Postal-Code>1157</Postal-Code>
+        </Address>
+        <Date-of-Birth>25.02.1990</Date-of-Birth>
+        <Telephone-Numbers>
+            <Home>2456746543256</Home>
+        </Telephone-Numbers>
+    </Contact>
+    <Contact type="colleague">
+        <Names>
+            <First>Tosho</First>
+            <Middle>Toshev</Middle>
+            <Last>Toshev</Last>
+        </Names>
+        <Address>
+            <City>Sofia</City>
+            <Street number="10">Random street</Street>
+            <Postal-Code>0022</Postal-Code>
+        </Address>
+        <Date-of-Birth>15.12.1970</Date-of-Birth>
+        <Telephone-Numbers>
+            <Mobile>43156457654</Mobile>
+        </Telephone-Numbers>
+    </Contact>
+    <Contact type="relative">
+        <Names>
+            <First>Gosho</First>
+            <Middle>Peshev</Middle>
+            <Last>Peshev</Last>
+        </Names>
+        <Address>
+            <City>Sofia</City>
+            <Street number="20">Random street</Street>
+            <Postal-Code>0011</Postal-Code>
+        </Address>
+        <Date-of-Birth>21.9.1980</Date-of-Birth>
+        <Telephone-Numbers>
+            <Mobile>35465654654</Mobile>
+            <Home>246476542342</Home>
+        </Telephone-Numbers>
+    </Contact>
+    <Contact type="acquaintance">
+        <Names>
+            <First>Bai Ivan</First>
+            <Middle>Ivanov</Middle>
+            <Last>Ivanov</Last>
+        </Names>
+        <Address>
+            <City>Sofia</City>
+            <Street number="30">Random street</Street>
+            <Postal-Code>2233</Postal-Code>
+        </Address>
+        <Date-of-Birth>3.3.1960</Date-of-Birth>
+        <Telephone-Numbers></Telephone-Numbers>
+    </Contact>
+</Addressbook>

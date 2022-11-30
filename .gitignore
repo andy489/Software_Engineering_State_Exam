@@ -94,3 +94,11 @@ out/
 # CPP
 cmake-build-debug/
 CMakeLists.txt
+
+### CMake template
+CMakeCache.txt
+CMakeFiles
+Makefile
+cmake_install.cmake
+install_manifest.txt
+*.log

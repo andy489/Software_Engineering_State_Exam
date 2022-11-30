@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:complexType name="names">
+        <xs:sequence>
+            <xs:element name="First" type="xs:string" />
+            <xs:element name="Middle" type="xs:string" />
+            <xs:element name="Last" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="address">
+        <xs:sequence>
+            <xs:element name="Country" type="xs:string" />
+            <xs:element name="City" type="xs:string" />
+            <xs:element name="Street">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="xs:string">
+                            <xs:attribute name="number" use="required"></xs:attribute>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="current" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Yes" />
+                    <xs:enumeration value="No" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="addresses">
+        <xs:sequence>
+            <xs:element name="Address" type="address" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="contacts">
+        <xs:sequence>
+            <xs:element name="Telephone" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+            <xs:element name="Email" type="xs:string" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="specialty">
+        <xs:sequence>
+            <xs:element name="Specialty-Name" type="xs:string" />
+            <xs:element name="Graduation-Date" type="xs:string" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="ongoing" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="Yes" />
+                    <xs:enumeration value="No" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="institution">
+        <xs:sequence>
+            <xs:element name="Institution-Name" type="xs:string" />
+            <xs:element name="Specialty" type="specialty" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="Degree" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="education">
+        <xs:sequence>
+            <xs:element name="Institution" type="institution" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="person">
+        <xs:sequence>
+            <xs:element name="Names" type="names" />
+            <xs:element name="Date-of-Birth" type="xs:string" />
+            <xs:element name="Birthplace" type="xs:string" />
+            <xs:element name="Citizenship" type="xs:string" />
+            <xs:element name="Addresses" type="addresses" />
+            <xs:element name="Contacts" type="contacts" />
+            <xs:element name="Education" type="education" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="people-database">
+        <xs:sequence>
+            <xs:element name="Person" type="person" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="People-Database" type="people-database" />
+</xs:schema>

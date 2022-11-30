@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE collection SYSTEM "cookbook.dtd">
+<collection>
+    <description>
+        Some delicious recipes for our students.
+    </description>
+    <recipe>
+        <title>Beef Parmesan with Garlic Angel Hair Pasta</title>
+        <ingredient name="Beef steak" amount="0.7" unit="kg" />
+        <ingredient name="Parmesan" amount="200" unit="gr" />
+        <ingredient name="Garlic" amount="5" unit="pieces" />
+        <ingredient name="Savory" amount="20" unit="gr" />
+        <ingredient name="Olive oil" amount="4" unit="spoons" />
+        <ingredient name="Salt" />
+        <preparation>
+            <step>
+                Preheat oven to 175 degrees C.
+            </step>
+            <step>
+                Mix all the products. Add salt according your flavor.
+            </step>
+            <step>
+                Bake 50 min. without cover.
+            </step>
+        </preparation>
+        <comment>
+            Optional comment:
+            Make the meat ahead of time, and refrigerate over night. Save the mozzarella till the last minute.
+        </comment>
+        <nutrition calories="1264" fat="28" carbohydrates="43" protein="35" />
+    </recipe>
+</collection>
