@@ -1,3 +1,4 @@
+#!/bin/bash
 count=1
 for i in 5 1 4 2
 do for j
