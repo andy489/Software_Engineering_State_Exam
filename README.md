@@ -5,7 +5,7 @@ Software Engineering @ FMI
 
 N|Курс|Тема|Допълнително
 :-:|:-:|:-|:-
-1|ДС-1|[Графи. Дървета. Обхождане на графи.](https://github.com/andy489/State_Exam/blob/main/Theory/01/01.pdf)|[1(2008-07-05 КН)](https://github.com/andy489/State_Exam/blob/main/Theory/01/1%20(2008-07-05%20%D0%9A%D0%9D).pdf)<br>[1(2014-07-15 КН)](https://github.com/andy489/State_Exam/blob/main/Theory/01/1%20(2014-07-15%20%D0%9A%D0%9D)%20.pdf)<br>[5(2017-09-09)](https://github.com/andy489/State_Exam/blob/main/Theory/01/5%20(2017-09-09%20%D0%9A%D0%9D).pdf)
+1|ДС-1|[Графи. Дървета. Обхождане на графи.](https://github.com/andy489/State_Exam/blob/main/Theory/01/01.pdf)|- [1(2008-07-05 КН)](https://github.com/andy489/State_Exam/blob/main/Theory/01/1%20(2008-07-05%20%D0%9A%D0%9D).pdf)<br>- [1(2014-07-15 КН)](https://github.com/andy489/State_Exam/blob/main/Theory/01/1%20(2014-07-15%20%D0%9A%D0%9D)%20.pdf)<br>- [5(2017-09-09)](https://github.com/andy489/State_Exam/blob/main/Theory/01/5%20(2017-09-09%20%D0%9A%D0%9D).pdf)
 2|ДС-1|[Булеви функции. Пълнота](https://github.com/andy489/State_Exam/blob/main/Theory/02/02.pdf)|
 3|ДС-2|[Крайни автомати. Регулярни езици. Теорема на Клини.](https://github.com/andy489/State_Exam/tree/main/Theory/03)|[5(2018-08-10 ИНФ)](https://github.com/andy489/State_Exam/blob/main/Theory/03/5%20(2018-09-10%20%D0%98%D0%9D%D0%A4).pdf)<br>[Brzozowski's algorithm](https://github.com/andy489/State_Exam/blob/main/Theory/03/Brzozowski's%20algorithm.pdf)<br>[Determinization of finite automaton with e-transitions](https://github.com/andy489/State_Exam/blob/main/Theory/03/Determinization%20of%20finite%20automaton%20with%20e-transitions.pdf)
 4|ДС-2|[Контекстно-свободни граматики и езици. Стекови автомати.](https://github.com/andy489/State_Exam/blob/main/Theory/04/04.pdf)|
