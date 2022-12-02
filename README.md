@@ -1,7 +1,7 @@
 # State Exam
 Software Engineering @ FMI
 
-## Теоритична част 
+## Теоретична част 
 N|Курс|Тема|Допълнително
 :-:|:-:|:-|:-
 1|ДС-1|[Графи. Дървета. Обхождане на графи.](https://github.com/andy489/State_Exam/blob/main/Theory/01/01.pdf)|<ul><li>[1(2008-07-05 КН)](https://github.com/andy489/State_Exam/blob/main/Theory/01/1%20(2008-07-05%20%D0%9A%D0%9D).pdf)</li><li>[1(2014-07-15 КН)](https://github.com/andy489/State_Exam/blob/main/Theory/01/1%20(2014-07-15%20%D0%9A%D0%9D)%20.pdf)</li><li>[5(2017-09-09)](https://github.com/andy489/State_Exam/blob/main/Theory/01/5%20(2017-09-09%20%D0%9A%D0%9D).pdf)</li></ul>
