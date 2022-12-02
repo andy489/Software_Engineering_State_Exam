@@ -1,8 +1,7 @@
 # State Exam
 Software Engineering @ FMI
 
-# Theory 
-
+## Теоритична част 
 N|Курс|Тема|Допълнително
 :-:|:-:|:-|:-
 1|ДС-1|[Графи. Дървета. Обхождане на графи.](https://github.com/andy489/State_Exam/blob/main/Theory/01/01.pdf)|<ul><li>[1(2008-07-05 КН)](https://github.com/andy489/State_Exam/blob/main/Theory/01/1%20(2008-07-05%20%D0%9A%D0%9D).pdf)</li><li>[1(2014-07-15 КН)](https://github.com/andy489/State_Exam/blob/main/Theory/01/1%20(2014-07-15%20%D0%9A%D0%9D)%20.pdf)</li><li>[5(2017-09-09)](https://github.com/andy489/State_Exam/blob/main/Theory/01/5%20(2017-09-09%20%D0%9A%D0%9D).pdf)</li></ul>
@@ -33,8 +32,7 @@ N|Курс|Тема|Допълнително
 26|ЛА-2|[Полиноми на една променлива. Теорема за деление с остатък. Най-голям общ делител на полиноми - тъждества на Безу и алгоритъм на Евклид. Зависимост между корени и коефициенти на полиноми (формули на Виет).](https://github.com/andy489/State_Exam/tree/main/Theory/26)
 27|СЕМ|[Дискретни разпределения. Биномно, геометрично и поасоново разпределение. Задачи, в които възникват. Моменти - математическо очакване и дисперсия. Равномерно непрекъснато разпределение.](https://github.com/andy489/State_Exam/blob/main/Theory/27/27.pdf)
 
-
-
+## Практическа част 
 Дата|Решения
 :-:|:-
 [2010-07-15](https://github.com/andy489/State_Exam/blob/main/Exams/2010/2010-07-15.pdf)|[1-[ДС-1] Булеви функции](https://github.com/andy489/State_Exam/blob/main/Exams/2010/Solutions/2010-07-15/1.pdf)<br>[2-[БД] Заявки](https://github.com/andy489/State_Exam/blob/main/Exams/2010/Solutions/2010-07-15/2.sql)<br>[3-[ООП-CPP] Laptop](https://github.com/andy489/State_Exam/blob/main/Exams/2010/Solutions/2010-07-15/3/CPP/Laptop/main.cpp), [3-[ООП-Java] Laptop](https://github.com/andy489/State_Exam/tree/main/Exams/2010/Solutions/2010-07-15/3/Java/Laptop/src/com/fmi/state/exam)<br>[4-[СДА-CPP] LinkedList](https://github.com/andy489/State_Exam/tree/main/Exams/2010/Solutions/2010-07-15/4/CPP/LinkedList), [4-[СДА-Java] LinkedList](https://github.com/andy489/State_Exam/tree/main/Exams/2010/Solutions/2010-07-15/4/Java/LinkedList/src/com/fmi/state/exam)<br>[5-[САРС] Декомпозиция на модулите](https://github.com/andy489/State_Exam/blob/main/Exams/2010/Solutions/2010-07-15/5.pdf)<br>[6-[АСИ] Софтуерни изисквания](https://github.com/andy489/State_Exam/blob/main/Exams/2010/Solutions/2010-07-15/6.pdf)<br>[7-[XML] book.xml](https://github.com/andy489/State_Exam/blob/main/Exams/2010/Solutions/2010-07-15/7/book.xml), [book.xsd](https://github.com/andy489/State_Exam/blob/main/Exams/2010/Solutions/2010-07-15/7/book.xsd)
